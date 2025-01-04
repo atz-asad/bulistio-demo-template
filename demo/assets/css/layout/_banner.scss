@@ -1,0 +1,57 @@
+/* -----------------------------------------
+    Banner CSS
+----------------------------------------- */
+.action-banner{
+    position: relative;
+    overflow: hidden;
+
+    .image {
+        padding: 0 25px;
+        .img-1,
+        .img-2{
+            padding: 10px;
+            position: relative;
+
+            &::after{
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: var(--color-white);
+                border-radius: 10px;
+                z-index: -1;
+            }
+        }
+        .img-1{
+            transform: rotateZ(-10deg);
+        }
+        .img-2{
+            transform: rotateZ(10deg);
+        }
+    }
+}
+
+.banner-sm{
+    position: relative;
+    overflow: hidden;
+    .banner-content{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        max-width: 60%;
+        padding: 0 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    &.content-center{
+        .banner-content{
+            max-width: 100%;
+            text-align: center;
+            padding: 30px 10px;
+        }
+    }
+}

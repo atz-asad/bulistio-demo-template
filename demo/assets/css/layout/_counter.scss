@@ -1,0 +1,23 @@
+/* -----------------------------------------
+    Category CSS
+----------------------------------------- */
+.counter-area {
+    .card {
+        background: transparent;
+        &-icon{
+            font-size: 70px;
+            line-height: 1;
+            color: var(--color-primary);
+        }
+        h2{
+            line-height: 1;
+            color: var(--color-primary);
+        }
+        &-content{
+            padding-inline-start: 20px;
+        }
+    }
+    &.with-radius {
+        border-radius: 50px 50px 0 0;
+    }
+}

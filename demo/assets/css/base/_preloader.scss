@@ -1,0 +1,66 @@
+/* -----------------------------------------
+  	Preloader CSS
+----------------------------------------- */
+#preLoader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1000;
+
+    .loader {
+        width: 54px;
+        height: 54px;
+        position: relative;
+        svg {
+            display: block;
+            width: 100%;
+            height: 100%;
+            rect {
+                fill: none;
+                stroke: var(--color-primary);
+                stroke-width: 6px;
+                stroke-linejoin: round;
+                stroke-linecap: round;
+            }
+            rect {
+                stroke-dasharray: (256 / 4 * 3) (256 / 4) (256 / 4 * 3) (256 / 4);
+                stroke-dashoffset: 0;
+                animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+            }
+        }
+        .icon{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: pulse 2s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+        }
+    }
+    
+    @keyframes pathRect {
+        25% {
+            stroke-dashoffset: 64;
+        }
+        50% {
+            stroke-dashoffset: 128;
+        }
+        75% {
+            stroke-dashoffset: 192;
+        }
+        100% {
+            stroke-dashoffset: 256;
+        }
+    }
+}

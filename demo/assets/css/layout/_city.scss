@@ -1,0 +1,112 @@
+/* -----------------------------------------
+    City CSS
+----------------------------------------- */
+.city-area{
+    position: relative;
+    overflow: hidden;
+    &.spacer-negative{
+        margin-top: -170px;
+    }
+    .card {
+        overflow: hidden;
+        &::before{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(179.93deg, rgba(255, 255, 255, 0) 0.06%, rgba(0, 0, 0, 0.72) 83.9%, rgba(0, 0, 0, 0.8) 99.94%);
+            z-index: 2;
+        }
+
+        .card-img{
+            position: relative;
+            overflow: hidden;
+            img{
+                @include transition(transform, .3s, ease-out);
+            }
+        }
+
+        .card-text {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 15px 0;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+
+            span{
+                color: rgba($color: var(--color-white-rgb), $alpha: .9);
+            }
+        }
+
+        &:hover{
+            .card-img {
+                img {
+                    transform: scale3d(1.05, 1.05, 1.05);
+                }
+            }
+        }
+    }
+    .slider-navigation {
+        .slider-btn{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            border-color: transparent;
+            background: var(--color-white);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+            z-index: 3;
+
+            &#city-slider-btn-prev{
+                left: 5px;
+            }
+            &#city-slider-btn-next{
+                right: 5px;
+            }
+        }
+    }
+
+    .shape {
+        img {
+            position: absolute;
+            z-index: -1;
+
+            &.shape-1 {
+                top: 13%;
+                right: 5%;
+                animation: moveLeftRight 10s linear infinite;
+            }
+
+            &.shape-2 {
+                top: 70%;
+                left: 4%;
+                animation: moveLeftRight 5s linear infinite;
+            }
+
+            &.shape-3 {
+                bottom: 10%;
+                right: 8%;
+                animation: moveUpDown 5s linear infinite;
+            }
+
+            &.shape-4 {
+                top: 14%;
+                left: 6%;
+                animation: moveUpDown 5s linear infinite;
+            }
+
+            &.shape-5 {
+                top: 18%;
+                left: 50%;
+                animation: moveAround 20s linear infinite;
+            }
+        }
+    }
+}

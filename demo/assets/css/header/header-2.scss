@@ -1,0 +1,39 @@
+.header-area.header-2:not(.is-sticky) {
+    :is(.nav-link:not(:is(.active, .menu-dropdown .nav-link)), .btn-icon, .nice-select, .nice-select::after) {
+        color: var(--color-white);
+    }
+
+    .nice-select::after {
+        color: var(--color-white);
+    }
+}
+
+.header-area.header-2 {
+    :is(.btn-primary) {
+        background: var(--color-primary);
+    }
+
+    .nice-select {
+        li {
+            color: var(--color-dark);
+        }
+    }
+
+    .navbar-brand {
+        img:nth-child(2) {
+            display: none;
+        }
+    }
+
+    &.is-sticky {
+        .navbar-brand {
+            img:nth-child(1) {
+                display: none;
+            }
+
+            img:nth-child(2) {
+                display: block;
+            }
+        }
+    }
+}

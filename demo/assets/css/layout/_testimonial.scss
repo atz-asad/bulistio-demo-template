@@ -1,0 +1,211 @@
+/* -----------------------------------------
+    Testimonial CSS
+----------------------------------------- */
+.testimonial-area{
+    position: relative;
+    .slider-item {
+        position: relative;
+        background: var(--color-white);
+        box-shadow: 0px 0px 20px 0px rgba(76, 87, 125, 0.11);
+    
+        .client-content{
+            border: 1px solid var(--border-color);
+            background: var(--color-white);
+            transition: box-shadow .3s ease-out;
+        }
+    
+        .quote {
+            padding: 25px 25px 23px 25px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .icon{
+            display: block;
+            font-size: 22px;
+            color: rgba($color: var(--color-primary-rgb), $alpha: .19);
+        }
+
+        p{
+            margin-bottom: 0;
+        }
+
+        .client-info{
+            padding: 25px;
+            h6 {
+                margin-bottom: 2px;
+            }
+    
+            .designation {
+                font-size: var(--font-sm);
+            }
+        }
+
+        .client-img {
+            max-width: 50px;
+            margin-inline-end: 16px;
+        }
+
+        .ratings{
+            font-size: var(--font-sm);
+            i{
+                color: var(--color-yellow);
+            }
+        }
+    }
+    .swiper-slide:hover, .swiper-slide-active{
+        .client-content{
+            box-shadow: 0px 0px 20px 0px rgba(76, 87, 125, 0.11);
+        }
+    }
+
+    .clients{
+        .client-img{
+            margin-inline-end: 10px;
+        }
+        img{
+            max-width: 40px;
+            border-radius: 50%;
+
+            &:not(:first-child){
+                margin-left: -16px;
+            }
+        }
+    }
+
+    &.testimonial-1{
+        .img-content{
+            position: relative;
+            &::after {
+                position: absolute;
+                content: '';
+                bottom: -17px;
+                left: 50%;
+                width: calc(100% + 100px);
+                height: 100%;
+                transform: translateX(-50%);
+                mask: url(../images/testimonial-img-bg.svg) no-repeat center/contain;
+                -webkit-mask: url(../images/testimonial-img-bg.svg) no-repeat center/contain;
+                background: var(--color-primary);
+                z-index: -1;
+            }
+            &::before{
+                position: absolute;
+                content: '';
+                bottom: 0;
+                right: 0;
+                left: 50%;
+                width: calc(100% + 100px);
+                height: 100%;
+                transform: translateX(-50%);
+                background: url(../images/testimonial-img-bg-shape.png) no-repeat;
+                background-size: cover;
+            }
+            img{
+                display: block;
+                margin-inline: auto;
+            }
+        }
+
+        .shape{
+            img{
+                position: absolute;
+                z-index: -1;
+                &.shape-1{
+                    left: -5%;
+                    top: 10%;
+                    animation: moveUpDown 10s linear infinite;
+                }
+                &.shape-2{
+                    right: -5%;
+                    bottom: 2%;
+                    animation: moveUpDown 10s linear infinite;
+                }
+                &.shape-3{
+                    left: -4%;
+                    bottom: 0%;
+                    animation: moveUpDown 10s linear infinite;
+                }
+                &.shape-4{
+                    right: -5%;
+                    top: 0%;
+                    animation: moveUpDown 10s linear infinite;
+                }
+            }
+        }
+    }
+
+    &.testimonial-2{
+        position: relative;
+
+        .swiper-pagination{
+            bottom: unset;
+            left: unset;
+            width: auto;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: unset;
+            margin-inline-end: 20px;
+            span{
+                display: block;
+                margin: 5px 0;
+            }
+        }
+        .swiper-slide{
+            padding-inline-end: 50px;
+        }
+        .img-content{
+            .img{
+                position: relative;
+                img{
+                    overflow: hidden;
+                    border-radius: 10px;
+                    clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+                }
+                &::after{
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 50%;
+                    width: 10px;
+                    height: 100%;
+                    transform: translateX(-50%) skewX(-5deg);
+                    background: var(--color-white);
+                    z-index: 1;
+                }
+            }
+        }
+
+        .shape{
+            img{
+                position: absolute;
+                z-index: -1;
+                &.shape-1{
+                    left: 0%;
+                    top: 10%;
+                    animation: moveUpDown 10s linear infinite;
+                }
+                &.shape-2{
+                    right: 0%;
+                    bottom: 2%;
+                    animation: moveUpDown 10s linear infinite;
+                }
+                &.shape-3{
+                    left: 45%;
+                    top: 20%;
+                    animation: rotate 10s linear infinite;
+                }
+                &.shape-4{
+                    right: 0%;
+                    top: 5%;
+                    animation: moveUpDown 10s linear infinite;
+                }
+                &.shape-5{
+                    right: 10%;
+                    bottom: 15%;
+                    animation: moveLeftRight 10s linear infinite;
+                }
+            }
+        }
+    }
+}

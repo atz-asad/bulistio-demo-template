@@ -1,0 +1,44 @@
+/* -----------------------------------------
+	Explore CSS
+----------------------------------------- */
+.explore-area{
+    position: relative;
+    overflow: hidden;
+    
+    .shape {
+        img {
+            position: absolute;
+            z-index: -1;
+
+            &.shape-1 {
+                top: 13%;
+                right: 5%;
+                animation: moveLeftRight 10s linear infinite;
+            }
+
+            &.shape-2 {
+                top: 70%;
+                left: 4%;
+                animation: moveLeftRight 5s linear infinite;
+            }
+
+            &.shape-3 {
+                bottom: 10%;
+                right: 8%;
+                animation: moveUpDown 5s linear infinite;
+            }
+
+            &.shape-4 {
+                top: 14%;
+                left: 6%;
+                animation: moveUpDown 5s linear infinite;
+            }
+
+            &.shape-5 {
+                top: 18%;
+                left: 50%;
+                animation: moveAround 20s linear infinite;
+            }
+        }
+    }
+}

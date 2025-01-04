@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="KreativDev">
+
+    <!-- Title -->
+    <title>Bulistio - Business Listing Html Template</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/fav-1.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css">
+    <!-- Bootstrap Datepicker CSS -->
+    <link rel="stylesheet" href="assets/css/vendors/bootstrap-datepicker.min.css">
+    <!-- Data Tables CSS -->
+    <link rel="stylesheet" href="assets/css/vendors/datatables.min.css">
+    <!-- Fontawesome Icon CSS -->
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+    <!-- Icomoon Icon CSS -->
+    <link rel="stylesheet" href="assets/fonts/icomoon/style.css">
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="assets/css/vendors/magnific-popup.min.css">
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css">
+    <!-- NoUi Range Slider -->
+    <link rel="stylesheet" href="assets/css/vendors/nouislider.min.css">
+    <!-- Nice Select -->
+    <link rel="stylesheet" href="assets/css/vendors/nice-select.css">
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="assets/css/vendors/aos.min.css">
+
+    <!-- Leaflet Map CSS  -->
+    <link rel="stylesheet" href="assets/css/vendors/leaflet.css">
+    <link rel="stylesheet" href="assets/css/vendors/MarkerCluster.css">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Preloader start -->
+    <div id="preLoader">
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <rect x="8" y="8" width="64" height="64"></rect>
+            </svg>
+            <div class="icon"><img src="assets/images/logo/f1.png" alt="Icon"></div>
+        </div>
+    </div>
+    <!-- Preloader end -->
+
+    <!-- Header-area start -->
+    <header class="header-area" data-aos="slide-down">
+        <!-- Start mobile menu -->
+        <div class="mobile-menu">
+            <div class="container">
+                <div class="mobile-menu-wrapper"></div>
+            </div>
+        </div>
+        <!-- End mobile menu -->
+
+        <div class="main-responsive-nav">
+            <div class="container">
+                <!-- Mobile Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo/logo-1.png" alt="logo">
+                    </a>
+                </div>
+                <!-- Menu toggle button -->
+                <button class="menu-toggler" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <div class="main-navbar">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo/logo-1.png" alt="Logo">
+                    </a>
+                    <!-- Navigation items -->
+                    <div class="collapse navbar-collapse">
+                        <ul id="mainMenu" class="navbar-nav mobile-item">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link toggle">Home <i class="fal fa-plus"></i></a>
+                                <ul class="menu-dropdown">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home Demo 1</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index-2.html">Home Demo 2</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index-3.html">Home Demo 3</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index-4.html">Home Demo 4</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link toggle active" href="#pages">Pages<i class="fal fa-plus"></i></a>
+                                <ul class="menu-dropdown">
+                                    <li class="nav-item">
+                                        <a class="nav-link toggle active" href="#">My Account<i class="fal fa-plus"></i></a>
+                                        <ul class="menu-dropdown">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="dashboard.html">Dashboard</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="order.html">Order List</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="order-details.html">Order Details</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="profile.html">Profile</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="login.html">Login</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="signup.html">Signup</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="reset-password.html">Reset Password</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="forgot-password.html">Forgot Password</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="wishlist.html">Wishlist</a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="checkout.html">Checkout</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link toggle" href="#">Listing<i class="fal fa-plus"></i></a>
+                                <ul class="menu-dropdown">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="listing-grid.html">Listing Grid</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="listing-column.html">Listing Column</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="listing-single.html">Listing Single</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="listing-map.html">Listing Map</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link toggle" href="#pages">Blog<i class="fal fa-plus"></i></a>
+                                <ul class="menu-dropdown">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="blogs.html">Blogs</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="blog-details.html">Blog Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="more-option mobile-item">
+                        <div class="item">
+                            <div class="language">
+                                <select>
+                                    <option value="1">En</option>
+                                    <option value="2">Ch</option>
+                                    <option value="3">Fr</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="login.html" class="btn-icon">
+                                <i class="far fa-user-circle"></i>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header-area end -->
+
+    <!-- Page title start-->
+    <div class="page-title-area ptb-100">
+        <!-- Background Image -->
+        <img class="lazyload blur-up bg-img" src="assets/images/page-title-bg.jpg" alt="Bg-img">
+        <div class="container">
+            <div class="content">
+                <h1>Order Details</h1>
+                <ul class="list-unstyled">
+                    <li class="d-inline"><a href="index.html">Home</a></li>
+                    <li class="d-inline">-</li>
+                    <li class="d-inline active">Order Details</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Page title end-->
+
+    <!-- Dashboard-area start -->
+    <section class="user-dashboard pt-100 pb-70">
+        <div class="container">
+            <div class="row gx-xl-5">
+                <div class="col-lg-3">
+                    <div class="widget-area mb-40 radius-md">
+                        <div class="widget radius-md">
+                            <ul class="links">
+                                <li><a href="dashboard.html">Dashboard</a></li>
+                                <li><a href="order.html">My Orders </a></li>
+                                <li><a href="wishlist.html">My Wishlist </a></li>
+                                <li><a href="order-details.html" class="active">Orders Details</a></li>
+                                <li><a href="reset-password.html">Change Password </a></li>
+                                <li><a href="profile.html">Edit Profile </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="user-profile-details">
+                                <div class="order-details radius-md">
+                                    <div class="progress-area-step">
+                                        <ul class="progress-steps">
+                                            <li class="active">
+                                                <div class="icon">1</div>
+                                                <div class="progress-title">Order placed</div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">2</div>
+                                                <div class="progress-title">On review</div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">3</div>
+                                                <div class="progress-title">On delivery</div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">4</div>
+                                                <div class="progress-title">Delivered</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="title">
+                                        <h3>My order details</h3>
+                                    </div>
+                                    <div class="view-order-page mb-40">
+                                        <div class="order-info-area">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-8">
+                                                   <div class="order-info mb-20">
+                                                       <h6>Order# 6xZb1587496163 <span>[pending]</span></h6>
+                                                       <p class="m-0">Order Date 21-Apr-2020</p>
+                                                   </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="prinit mb-20">
+                                                        <a href="#" class="btn btn-md radius-sm"><i class="fas fa-print"></i>print</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="billing-add-area mb-10">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="main-info mb-30">
+                                                    <h5>User</h5>
+                                                    <ul class="list">
+                                                        <li><span>Email:</span>user@gmail.com</li>
+                                                        <li><span>Phone:</span>34534534534</li>
+                                                        <li><span>Fax:</span>34534534534</li>
+                                                        <li><span>City:</span>Test City</li>
+                                                        <li><span>Zip:</span>1231</li>
+                                                        <li><span>Address:</span> Test Address</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="payment-information mb-30">
+                                                    <h5>Payment Status</h5>
+                                                    <p>Payment Status <span class="badge bg-danger">unpaid</span></p>
+                                                    <p>paid amount <span class="amount">$140</span></p>
+                                                    <p>Payment Method: Cash On Delivery</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive product-list">
+                                        <h5>Ordered Product</h5>
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>ID#</th>
+                                                    <th>Name</th>
+                                                    <th>Details</th>
+                                                    <th>Price</th>
+                                                    <th>Total</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>100</td>
+                                                    <td>Physical Product Title Title</td>
+                                                    <td>
+                                                        <b>Quantity:</b> <span>1</span><br>
+                                                        <b>Size:</b> <span>s</span><br>
+                                                        <b>Color:</b><span class="color"></span>
+                                                    </td>
+                                                    <td>$130</td>
+                                                    <td>$130</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="edit-account-info">
+                                        <a href="#" class="btn btn-lg btn-primary">back</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Dashboard-area end -->
+
+    <!-- Footer-area start -->
+    <footer class="footer-area bg-primary-light">
+        <div class="footer-top pt-100 pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <div class="footer-widget" data-aos="fade-up" data-aos-delay="100">
+                            <div class="navbar-brand">
+                                <a href="index.html">
+                                    <img src="assets/images/logo/logo-1.png" alt="Logo">
+                                </a>
+                            </div>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                            <div class="social-link">
+                                <a href="https://www.instagram.com/" target="_blank"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="https://www.dribbble.com/" target="_blank"><i class="fab fa-dribbble"></i></a>
+                                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6">
+                        <div class="footer-widget" data-aos="fade-up" data-aos-delay="200">
+                            <h3>Useful Links</h3>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="#">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6">
+                        <div class="footer-widget" data-aos="fade-up" data-aos-delay="300">
+                            <h3>Services</h3>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="#">Hotel Booking</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tour Booking</a>
+                                </li>
+                                <li>
+                                    <a href="#">Car Booking</a>
+                                </li>
+                                <li>
+                                    <a href="#">All Services</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-widget" data-aos="fade-up" data-aos-delay="400">
+                            <h3>Contact Us</h3>
+                            <ul class="info-list">
+                                <li>
+                                    <i class="fal fa-map-marker-alt"></i>
+                                    <span>2416 Mapleview Drive</span>
+                                </li>
+                                <li>
+                                    <i class="fal fa-phone-plus"></i>
+                                    <a href="tel:00123456789">+001 234 67 89</a>
+                                </li>
+                                <li>
+                                    <i class="fal fa-headset"></i>
+                                    <a href="tel:992233555">+999 22 33 555</a>
+                                </li>
+                                <li>
+                                    <i class="fal fa-envelope"></i>
+                                    <a href="mailto:info@example.com">info@example.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                        <div class="footer-widget" data-aos="fade-up" data-aos-delay="500">
+                            <h3>Subscribe Us</h3>
+                            <p class="lh-1 mb-20">Stay update with us and get offer!</p>
+                            <div class="newsletter-form">
+                                <form id="newsletterForm">
+                                    <div class="form-group">
+                                        <input class="form-control radius-sm" placeholder="Enter email" type="text" name="EMAIL"
+                                            required="" autocomplete="off">
+                                        <button class="btn btn-md btn-primary radius-sm" type="submit">Subscribe</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right-area border-top">
+            <div class="container">
+                <div class="copy-right-content">
+                    <span>
+                        Copyright <i class="fal fa-copyright"></i><span id="footerDate"></span> <a href="index.html" class="color-primary">Bulistio</a>. All Rights Reserved
+                    </span>
+                </div>
+            </div>
+        </div>
+         
+    </footer>
+    <!-- Footer-area end-->
+
+    <!-- Cookie bar start -->
+    <div class="cookie-bar">
+        <div class="container">
+            <div class="cookie-bar-inner">
+                <p class="mb-20 color-light">
+                    By continuing to use this site you agree to our <a href="#" class="color-primary text-decoration-underline">Cookie Policy</a>.
+                </p>
+                <div class="cta-btn mb-20 d-flex flex-wrap gap-2">
+                    <a href="javascript:void(0)" class="btn btn-md radius-0 btn-primary">Accept</a>
+                    <a href="javascript:void(0)" class="btn btn-md radius-0 btn-primary">Decline</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cookie bar end -->
+
+    <!-- Go to Top -->
+    <div class="go-top"><i class="fal fa-angle-up"></i></div>
+    <!-- Go to Top -->
+
+    <!-- Jquery JS -->
+    <script src="assets/js/vendors/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="assets/js/vendors/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/vendors/bootstrap.min.js"></script>
+    <!-- Bootstrap Datepicker JS -->
+    <script src="assets/js/vendors/bootstrap-datepicker.min.js"></script>
+    <!-- Data Tables JS -->
+    <script src="assets/js/vendors/datatables.min.js"></script>
+    <!-- Nice Select JS -->
+    <script src="assets/js/vendors/jquery.nice-select.min.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="assets/js/vendors/jquery.magnific-popup.min.js"></script>
+    <!-- Counter Up JS -->
+    <script src="assets/js/vendors/jquery.counterup.min.js"></script>
+    <script src="assets/js/vendors/jquery.waypoints.js"></script>
+    <!-- Swiper Slider JS -->
+    <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+    <!-- Lazysizes -->
+    <script src="assets/js/vendors/lazysizes.min.js"></script>
+    <!-- Noui Range Slider JS -->
+    <script src="assets/js/vendors/nouislider.min.js"></script>
+    <!-- AOS JS -->
+    <script src="assets/js/vendors/aos.min.js"></script>
+    <!-- Mouse Hover JS -->
+    <script src="assets/js/vendors/mouse-hover-move.js"></script>
+    <!-- Svg Loader JS -->
+    <script src="assets/js/vendors/svg-loader.min.js"></script>
+
+    <!-- Leaflet Map JS -->
+    <script src="assets/js/vendors/leaflet.js"></script>
+    <script src="assets/js/vendors/leaflet.markercluster.js"></script>
+
+    <!-- Map JS -->
+    <script src="assets/js/map.js"></script>
+    <!-- Main script JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

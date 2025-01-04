@@ -1,0 +1,200 @@
+/* -----------------------------------------
+    Work Process CSS
+----------------------------------------- */
+.work-area {
+    position: relative;
+    overflow: hidden;
+    
+    .shape {
+        img {
+            position: absolute;
+            z-index: -1;
+
+            &.shape-1 {
+                top: 13%;
+                right: 5%;
+                animation: moveLeftRight 10s linear infinite;
+            }
+
+            &.shape-2 {
+                top: 70%;
+                left: 4%;
+                animation: moveLeftRight 5s linear infinite;
+            }
+
+            &.shape-3 {
+                bottom: 10%;
+                right: 8%;
+                animation: moveAround 20s linear infinite;
+            }
+
+            &.shape-4 {
+                top: 14%;
+                left: 6%;
+                animation: moveUpDown 5s linear infinite;
+            }
+
+            &.shape-5 {
+                top: 18%;
+                left: 50%;
+                animation: moveUpDown 5s linear infinite;
+            }
+        }
+    }
+}
+
+.work-process-1 {
+    .card {
+        padding: 20px;
+        margin-top: 42px;
+        @include transition(all, .3s, ease-out);
+        border: 3px solid var(--border-color);
+        z-index: 1;
+
+        &-content {
+            position: relative;
+            padding: 35px;
+            background: rgba($color: var(--color-primary-rgb), $alpha: .10);
+            @include transition(all, .3s, ease-out);
+        }
+
+        &-icon {
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 45px;
+            color: var(--color-primary);
+            background: rgba($color: var(--color-primary-rgb), $alpha: .13);
+        }
+
+        &-step {
+            position: absolute;
+            top: -50px;
+            left: 30px;
+            right: 0;
+            width: 120px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            &:before {
+                position: absolute;
+                content: '';
+                top: 50%;
+                left: -10px;
+                right: 0;
+                transform: translateY(-50%);
+                width: calc(100% + 20px);
+                height: 20px;
+                background: var(--color-white);
+                z-index: -1;
+            }
+
+            span{
+                position: relative;
+                font-weight: 800;
+                font-size: 115px;
+                line-height: 1;
+                text-fill-color: transparent;
+                -webkit-text-fill-color: transparent;
+                -webkit-text-stroke: 2px var(--color-medium);
+                transform-origin: 50% 0;
+                transform-style: preserve-3d;
+                @include transition(transform, .3s, linear);
+                
+                &::before{
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    content: attr(data-hover);
+                    transform: rotateX(-90deg);
+                    transform-origin: 50% 0;
+                    -webkit-text-fill-color: var(--color-primary);
+                    -webkit-text-stroke: 0;
+                }
+            }
+        }
+
+        &:hover {
+            border-color: rgba($color: var(--color-primary-rgb), $alpha: .4);
+
+            .card-content {
+                background: var(--color-white);
+                box-shadow: var(--shadow-sm);
+            }
+
+            .card-step {
+                span {
+                    transform: rotateX(90deg) translateY(-22px);
+                }
+            }
+        }
+    }
+}
+
+.work-process-2{
+    .card {
+        padding: 0 30px 30px;
+        transition: all .4s ease-out;
+        z-index: 1;
+    
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 5px;
+            border-bottom: 2px solid var(--color-primary);
+            transform: scaleX(0);
+            transition: transform .4s ease-out;
+            z-index: -1;
+        }
+    
+        .card-icon {
+            width: 64px;
+            height: 84px;
+            line-height: 84px;
+            text-align: center;
+            font-size: 32px;
+            border-radius: 0 0 5px 5px;
+            color: var(--color-primary);
+            background-color: rgba($color: var(--color-primary-rgb), $alpha: .13);
+            transition: all .3s ease-out;
+        }
+    
+        .card-content {
+            position: relative;
+    
+            .card-text {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+        }
+    
+        &:hover {
+            border-color: transparent !important;
+            box-shadow: 0px 4px 80px rgba(17, 16, 33, 0.08);
+            transform: none;
+    
+            &::after {
+                transform: scaleX(1);
+            }
+
+            .card-icon{
+                color: var(--color-white);
+                background: var(--color-primary);
+            }
+        }
+    }
+}

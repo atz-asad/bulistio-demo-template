@@ -1,0 +1,63 @@
+/* -----------------------------------------
+    Gallery CSS
+----------------------------------------- */
+.gallery-area {
+    .card {
+        overflow: hidden;
+        &::before{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180.25deg, rgba(255, 255, 255, 0) -4.6%, rgba(18, 18, 18, 0.56) 74.16%, rgba(12, 12, 12, 0.7) 99.79%);
+            z-index: 2;
+        }
+
+        .card-img{
+            overflow: hidden;
+            img{
+                @include transition(transform, .3s, ease-out);
+            }
+        }
+
+        .card-text {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 15px 0;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+
+            .card-title, span {
+                display: block;
+                opacity: 0;
+                transform: translateY(20px);
+                transition: transform .4s, opacity .4s;
+            }
+            span {
+                transition-delay: .1s;
+            }
+        }
+
+        &:hover{
+            .card-img {
+                img {
+                    transform: scale3d(1.05, 1.05, 1.05);
+                }
+            }
+            .card-text {
+                .card-title, span {
+                    opacity: 1;
+                    transform: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+/* -----------------------------------------
+	Newsletter CSS
+----------------------------------------- */
+.newsletter-area{
+    .newsletter-inner{
+        position: relative;
+        overflow: hidden;
+        padding: 60px 0;
+        border-radius: 30px;
+        
+        &::before{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: var(--color-dark);
+            opacity: .5;
+            z-index: -1;
+        }
+    }
+
+	.newsletter-form{
+        .input-group{
+            padding: 0;
+            background-color: transparent;
+            border: 2px solid var(--color-white);
+            ::-webkit-input-placeholder { 
+                color: var(--color-white); 
+            }
+            :-ms-input-placeholder {
+                color: var(--color-white); 
+            }
+            ::-ms-input-placeholder { 
+                color: var(--color-white); 
+            }
+            ::placeholder { 
+                color: var(--color-white); 
+            }
+            .btn{
+                border-radius: 5px !important;
+                color: var(--color-dark);
+                background: var(--color-white);
+            }
+            .form-control{
+                background-color: transparent;
+                padding: 20px;
+                color: var(--color-white);
+            }
+        }
+    }
+}

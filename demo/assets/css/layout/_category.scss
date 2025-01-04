@@ -1,0 +1,282 @@
+/* -----------------------------------------
+    Category CSS
+----------------------------------------- */
+.category-area {
+    position: relative;
+    .category-item {
+        padding: 25px;
+        background: var(--color-white);
+        @include transition(all, .4s, ease-out);
+
+        .category-icon {
+            position: relative;
+            margin-inline: auto;
+            width: 76px;
+            height: 76px;
+            z-index: 1;
+            font-size: 60px;
+            color: var(--color-primary);
+
+            i{
+                display: inline-block;
+                transform: translateZ(0);
+                backface-visibility: hidden;
+                transition-duration: 0.5s;
+            }
+        }
+        .category-qty {
+            display: block;
+            margin-inline: auto;
+            font-size: var(--font-sm);
+            @include transition(all, .3s, ease-out);
+        }
+
+        .hover-primary{
+            transition: .3s all ease-out;
+        }
+
+        &:hover {
+            .category-icon{
+                i{
+                    transform: scale(1.2);
+                    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+                }
+                &.hover-primary{
+                    color: var(--color-white);
+                    background: var(--color-primary) !important;
+                }
+            }
+        }
+    }
+
+    &.category-1{
+        .category-item{
+            box-shadow: var(--shadow-sm);
+            .category-icon {
+                margin-bottom: 30px;
+                // &::after {
+                //     position: absolute;
+                //     content: '';
+                //     bottom: -30px;
+                //     left: 50%;
+                //     width: 100%;
+                //     height: 100%;
+                //     transform: translateX(-50%);
+                //     mask: url(../images/shape/blob.svg) no-repeat center/contain;
+                //     -webkit-mask: url(../images/shape/blob.svg) no-repeat center/contain;
+                //     background: rgba(var(--color-primary-rgb), 0.13);
+                //     z-index: -1;
+                // }
+            }
+    
+            .category-title {
+                font-size: var(--font-lg);
+            }
+            .category-qty {
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                border-radius: 5px;
+                background: rgba($color: var(--color-primary-rgb), $alpha: .13);
+            }
+            &:hover {
+                .category-qty{
+                    background: var(--color-primary);
+                    color: var(--color-white);
+                }
+            }
+        }
+        .swiper-slide:nth-child(even) {
+            margin-top: 30px;
+        }
+
+        .shape{
+            img{
+                &.shape-1 {
+                    top: 13%;
+                    right: 5%;
+                    animation: moveLeftRight 10s linear infinite;
+                }
+
+                &.shape-2 {
+                    top: 70%;
+                    left: 4%;
+                    animation: moveLeftRight 5s linear infinite;
+                }
+
+                &.shape-3 {
+                    bottom: 10%;
+                    right: 8%;
+                    animation: moveUpDown 5s linear infinite;
+                }
+
+                &.shape-4 {
+                    top: 14%;
+                    left: 6%;
+                    animation: moveUpDown 5s linear infinite;
+                }
+
+                &.shape-5 {
+                    top: 18%;
+                    left: 50%;
+                    animation: moveAround 20s linear infinite;
+                }
+            }
+        }
+    }
+
+    &.category-2 {
+        .category-item{
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-top: 30px;
+
+            .category-icon{
+                display: grid;
+                place-items: center;
+                margin-top: -30px;
+                margin-bottom: 15px;
+                background: var(--color-white);
+                box-shadow: 0px 8px 45px rgba(65, 65, 65, 0.09);
+                border-radius: 50%;
+                font-size: 40px;
+            }
+
+            .category-qty{
+                position: relative;
+                overflow: hidden;
+                width: 60px;
+                height: 60px;
+                line-height: 80px;
+                color: var(--color-medium);
+                margin-top: -15px;
+                margin-bottom: -1px;
+                z-index: 2;
+                
+                &::after{
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    bottom: -20px;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    border: 1px solid var(--border-color);
+                    background: var(--color-white);
+                    z-index: -1;
+                    transition: all .3s ease-out;
+                }
+            }
+            &:hover {
+                border-color: var(--color-primary) !important;
+                .category-qty{
+                    color: var(--color-white);
+                    &::after{
+                        background: var(--color-primary);
+                        border-color: var(--color-primary);
+                    }
+                }
+            }
+        }
+
+        .shape{
+            img{
+                &.shape-1{
+                    left: -7%;
+                    top: 40%;
+                    animation: moveLeftRight 10s linear infinite;
+                }
+                &.shape-2{
+                    right: -7%;
+                    top: 40%;
+                    animation: moveLeftRight 10s linear infinite;
+                }
+            }
+        }
+    }
+
+    &.category-3{
+        .category-item{
+            padding-bottom: 0;
+            border: 1px solid transparent;
+            .category-qty {
+                width: 60px;
+                height: 45px;
+                line-height: 45px;
+                margin-bottom: -20px;
+                color: var(--color-primary);
+                border-radius: 5px;
+                background: var(--color-white);
+                box-shadow: 0px 8px 45px rgba(65, 65, 65, 0.05);
+            }
+            &:hover{
+                .category-qty{
+                    color: var(--color-white);
+                    background: var(--color-primary);
+                }
+            }
+        }
+    }
+
+    &.category-4 {
+        .category-item{
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-top: 30px;
+
+            .category-icon{
+                display: grid;
+                place-items: center;
+                height: 80px;
+                margin-top: -30px;
+                margin-bottom: 20px;
+                background: var(--color-white);
+                box-shadow: 0px 8px 45px rgba(65, 65, 65, 0.09);
+                border-radius: 50%;
+                font-size: 40px;
+            }
+
+            .category-qty{
+                position: relative;
+                overflow: hidden;
+                width: 60px;
+                height: 60px;
+                line-height: 80px;
+                color: var(--color-medium);
+                margin-bottom: -1px;
+                z-index: 2;
+                
+                &::after{
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    bottom: -20px;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    border: 1px solid var(--border-color);
+                    background: var(--color-white);
+                    z-index: -1;
+                    transition: all .3s ease-out;
+                }
+            }
+            &:hover {
+                border-color: var(--color-primary) !important;
+                .category-qty{
+                    color: var(--color-white);
+                    &::after{
+                        background: var(--color-primary);
+                        border-color: var(--color-primary);
+                    }
+                }
+            }
+        }
+    }
+
+    .shape {
+        img {
+            position: absolute;
+            z-index: -1;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+/* -----------------------------------------
+	Color CSS
+----------------------------------------- */
+/* Theme Color CSS */
+.theme-color-1{
+    --color-primary: #f9725f;
+    --color-primary-rgb: 249, 114, 95;
+}
+.theme-color-2{
+    --color-primary: #2D48C3;
+    --color-primary-rgb: 45, 72, 195;
+}
+.theme-color-3{
+    --color-primary: #FF344F;
+    --color-primary-rgb: 255, 12, 13;
+}
+.theme-color-4{
+    --color-primary: #00C471;
+    --color-primary-rgb: 0, 196, 113;
+}
+/* Color CSS */
+.color-primary {
+    color: var(--color-primary) !important;
+}
+
+.color-white {
+    color: var(--color-white) !important;
+}
+
+.color-light {
+    color: var(--color-light) !important;
+}
+
+.color-dark {
+    color: var(--color-dark) !important;
+}
+
+.color-medium {
+    color: var(--color-medium) !important;
+}
+
+.color-secondary {
+    color: var(--color-secondary) !important;
+}
+
+.color-blue {
+    color: var(--color-blue) !important;
+}
+
+.color-green {
+    color: var(--color-green) !important;
+}
+
+.color-red {
+    color: var(--color-red) !important;
+}
+
+.color-yellow {
+    color: var(--color-yellow) !important;
+}
+
+.color-purple {
+    color: var(--color-primary) !important;
+}
+
+.color-orange {
+    color: var(--color-orange) !important;
+}
+
+.bg-primary {
+    background: var(--color-primary) !important;
+}
+
+.bg-primary-light {
+    background: rgba($color: var(--color-primary-rgb), $alpha: .04) !important;
+}
+.bg-secondary {
+    background: var(--color-secondary) !important;
+}
+.bg-light {
+    background: var(--bg-light) !important;
+}
+
+.border-primary {
+    border-color: var(--color-primary) !important;
+}
+
+
+.fill-primary{
+    fill: var(--color-primary) !important;
+}
+.stroke-primary{
+    stroke: var(--color-primary);
+}
+.fill-primary-light{
+    fill: rgba($color: var(--color-primary-rgb), $alpha: .5)
+}

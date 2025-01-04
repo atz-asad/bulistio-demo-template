@@ -1,0 +1,53 @@
+/* -----------------------------------------
+    Variables CSS
+----------------------------------------- */
+:root {
+    // Default Fonts
+    --font-heading: 'Quicksand', sans-serif;
+    --font-body: 'Mulish', sans-serif;
+    --font-family-fontawesome: "Font Awesome 5 Pro";
+    --font-base: 16px;
+    --font-sm: 14px;
+    --font-xsm: 12px;
+    --font-lg: 18px;
+    --font-medium: 500;
+    --font-normal: 400;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    // Base Colors
+    --color-primary: #f9725f;
+    --color-secondary: #F7472E;
+    --color-red: #EB4C4C;
+    --color-green: #00D5AE;
+    --color-blue: #0061DF;
+    --color-cyan: #21C4DF;
+    --color-pink: #FF7294;
+    --color-purple: #6231F0;
+    --color-yellow: #FFC800;
+    --color-orange: #F59872;
+    --color-white: #ffffff;
+    --color-dark: #181B1D;
+    --color-medium: #8D8D8D;
+    --color-light: #F5F5F5;
+    --color-primary-rgb: 249, 114, 95;
+    --color-secondary-rgb: 247, 71, 46;
+    --color-red-rgb: 235, 76, 76;
+    --color-green-rgb: 0, 213, 174;
+    --color-blue-rgb: 0, 97, 223;
+    --color-cyan-rgb: 33, 196, 223;
+    --color-pink-rgb: 255, 114, 148;
+    --color-purple-rgb: 98, 49, 240;
+    --color-yellow-rgb: 253, 192, 64;
+    --color-orange-rgb: 245, 152, 114;
+    --color-white-rgb: 255, 255, 255;
+    --color-dark-rgb: 25, 27, 30;
+    --color-medium-rgb: 141, 141, 141;
+    --color-light-rgb: 242, 242, 242;
+    --border-color: #eaeaea;
+    // Background Colors
+    --bg-light: #F7F7F7;
+    --gradient-bg: linear-gradient(90deg, var(--color-primary) 14.17%, var(--color-primary-shade) 94.83%);
+    // Box shadow
+    --shadow-md: 0px 4px 80px rgba(0, 0, 0, 0.08);
+    --shadow-sm: 0px 10px 40px rgb(0, 0, 0, .06);
+}

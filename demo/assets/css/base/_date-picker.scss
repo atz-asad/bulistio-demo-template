@@ -1,0 +1,68 @@
+/* -----------------------------------------
+	Datepicker CSS
+----------------------------------------- */
+.datepicker{
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-width: 0;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .2);
+
+    td, th{
+        cursor: pointer;
+        line-height: 0;
+        border-radius: 0;
+        width: 40px;
+        height: 40px;
+    }
+
+    td, td span{
+        border-radius: 5px;
+    }
+
+    table tr td.active.active, 
+    table tr td.active.disabled, 
+    table tr td.active.disabled.active, 
+    table tr td.active.disabled.disabled, 
+    table tr td.active.disabled:active, 
+    table tr td.active.disabled:hover, 
+    table tr td.active.disabled:hover.active, 
+    table tr td.active.disabled:hover.disabled, 
+    table tr td.active.disabled:hover:active, 
+    table tr td.active.disabled:hover:hover, 
+    table tr td.active.disabled:hover[disabled], 
+    table tr td.active.disabled[disabled], 
+    table tr td.active:active, 
+    table tr td.active:hover, 
+    table tr td.active:hover.active, 
+    table tr td.active:hover.disabled, 
+    table tr td.active:hover:active, 
+    table tr td.active:hover:hover, 
+    table tr td.active:hover[disabled], 
+    table tr td.active[disabled],
+    table tr td span.active.active, 
+    table tr td span.active.disabled, 
+    table tr td span.active.disabled.active, 
+    table tr td span.active.disabled.disabled, 
+    table tr td span.active.disabled:active, 
+    table tr td span.active.disabled:hover, 
+    table tr td span.active.disabled:hover.active, 
+    table tr td span.active.disabled:hover.disabled, 
+    table tr td span.active.disabled:hover:active, 
+    table tr td span.active.disabled:hover:hover, 
+    table tr td span.active.disabled:hover[disabled], 
+    table tr td span.active.disabled[disabled], 
+    table tr td span.active:active, 
+    table tr td span.active:hover, 
+    table tr td span.active:hover.active, 
+    table tr td span.active:hover.disabled, 
+    table tr td span.active:hover:active, 
+    table tr td span.active:hover:hover, 
+    table tr td span.active:hover[disabled], 
+    table tr td span.active[disabled]{
+        background: var(--color-primary) !important;
+    }
+    &.datepicker-dropdown:before{
+        border-color: transparent
+    }
+}
